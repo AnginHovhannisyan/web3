@@ -1,0 +1,294 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+}
+
+.header{
+	width: 100%;
+	height: 70px;
+	display: grid;
+/*	grid-template-columns: repeat(auto-fit, 500px);*/
+	grid-auto-flow: column;
+	justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    padding: 0 40px;
+}
+
+.menu{
+	display: grid;
+	grid-auto-flow: column;
+	gap: 30px;
+	list-style: none;
+}
+
+.menu a{
+	color: #cba1a1;
+}
+
+.header i{
+	color: #989898;
+	letter-spacing: 20px;
+}
+
+.img{
+	width: 100%;
+	height: 789px;
+	background: url(../img/header.jpg) no-repeat;
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	display: grid;
+	/*justify-content: center;
+    justify-items: center;*/
+    align-items: center;
+    justify-items: center;
+    justify-content: space-evenly;
+}
+
+.img div >h1{
+	margin-top: 40px;
+	color: #cba1a1;
+	font-size: 31px;
+}
+
+.text{
+	display: grid;
+	grid-auto-flow: column;
+	align-items: center;
+	gap: 10px;
+}
+
+.text hr{
+	width: 68px;
+	border: 1px solid #e6bebe;
+}
+
+.text p{
+	font-size: 16px;
+	color: #cba1a1;
+}
+
+.images{
+	width: 100%;
+	display: grid;
+	grid-auto-flow: column;
+	gap: 50px;
+}
+
+.images div{
+	display: grid;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+}
+
+.img img{
+	width: 332px;
+	height: 470px;
+}
+
+.img button{
+	width: 152px;
+	height: 43px;
+	border: none;
+	font-size: 15px;
+	background: #e6bebe;
+	color: #576d40;
+	position: relative;
+    bottom: 24px;
+}
+
+.fourimg{
+/*	width: 100%;*/
+	height: 960px;
+	display: grid;
+	justify-items: center;
+    justify-content: center;
+	grid-template-columns: 503px 488px;
+	grid-row-gap: 30px;
+	margin: 100px 0 80px 0;
+/*	grid-template-columns: repeat(auto-fill, minmax(454px, 1fr));*/
+
+}
+
+.mid{
+	position: absolute;
+	padding: 30px 27px;
+	color: white;
+}
+
+.fourimg div > p{
+	margin-bottom: 300px;
+}
+
+.mid span{
+	position: relative;
+	bottom: 4px;
+	padding: 0 5px;
+	font-size: 18px;
+}
+
+.fourimg h2{
+	font-size: 26px;
+}
+
+.mid hr{
+	border: 1px solid white;
+
+}
+
+.icon{
+	display: grid;
+	grid-auto-flow: column;
+	grid-template-columns: 37px 333px;
+	padding-top: 5px;
+}
+
+.heart{
+	color: #c55d5d;
+}
+
+.posts{
+	display: grid;
+	justify-items: center;
+}
+
+.posts button{
+	width: 152px;
+	height: 43px;
+	border: none;
+	font-size: 15px;
+	background: #e6bebe;
+	color: #576d40;
+	margin-bottom: 80px;
+}
+
+.about{
+	width: 100%;
+	height: 410px;
+	background: #f5d7d7;
+	color: #4b663f;
+	display: grid;
+    justify-items: center;
+    align-content: space-evenly;
+}
+
+.about hr{
+	width: 52px;
+	border: 1px solid #597344;
+}
+
+.about p{
+	width: 	503px;
+	height: 75px;
+	text-align: center;
+	font-size: 15px;
+}
+
+.about button{
+	width: 152px;
+	height: 43px;
+	border: none;
+	font-size: 15px;
+	background: #576d40;
+	color: #e6bebe;
+}
+
+
+.container {
+  position: relative;
+  width: 306px;
+  height: 306px;
+  overflow: hidden;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #000000ad;
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+.galleryText {
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 25%;
+  transform: translate(-19%, -50%);
+  text-align: center;
+  font-size: 24px;
+}
+
+.gallery{
+	width: 100%;
+    display: grid;
+	grid-auto-flow: column;
+}
+
+.footer{
+	width: 100%;
+	height: 311px;
+	display: grid;
+    justify-items: center;
+    align-content: space-around;
+    margin-top: 120px;
+}
+
+.singIn button{
+	width: 106px;
+	height: 34px;
+	border: none;
+	font-size: 15px;
+	color: #e6bebe;
+	background: #576d40;
+	vertical-align: bottom;
+}
+
+.singIn input{
+	width: 343px;
+	height: 50px;
+	border: none;
+	outline: none;
+	margin-top: 35px;
+	padding: 20px;
+	border-bottom: 1px solid black;
+
+}
+
+.footer i{
+	font-size: 20px;
+	color: #999999;
+	letter-spacing: 30px;
+}
+
+.footer div:nth-child(3){
+	color: #4b6635;
+	font-size: 15px;
+}
+
+.footer div:nth-child(3) a{
+	cursor: pointer;
+	text-decoration: underline;
+}
